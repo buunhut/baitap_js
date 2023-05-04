@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .content{
+    padding: 10px 20px;
+    width: 25%;
+}
+
+.container h1{
+    margin-top: 20px;
+    font-size: 24px;
+}
+.container form label{
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    color: royalblue;
+    margin-top: 10px;
+}
+.container form input, select{
+    display: block;
+    margin-top: 5px;
+    padding: 0 10px;
+    height: 30px;
+    width: 100%;
+    font-size: 16px;
+}
+.container form button{
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: royalblue;
+    height: 40px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+.container form button:hover{
+    background-color: rgb(100, 135, 245);
+}
+.container #ketQua, #tienDien, #tienThuetncn, #tienCap {
+    color: royalblue;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.container hr{
+    margin-top: 30px;
+    height: 1px;
+    background-color: rgba(192, 192, 192, 0.3);
+    border: none;
+    display: none;
+}
+/* responsive */
+@media screen and (max-width: 1200px) {
+    .container .content{
+        width: 50%;
+    }
+        
+}
+
+@media screen and (max-width: 992px) {
+    .container .content{
+        width: 50%;
+    }
+        
+}
+
+@media screen and (max-width: 768px) {
+    .container .content{
+        width: 100%;
+    }
+    .container hr{
+        display: block;
+    }
+        
+}
+@media screen and (max-width: 576px) {
+    .container .content{
+        width: 100%;
+    }
+    .container hr{
+        display: block;
+    }
+    
+        
+}

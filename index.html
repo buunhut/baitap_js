@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bài tập JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>TUYỂN SINH</h1>
+            <form action="">
+                <label for="diemChuan">Điểm chuẩn của hội đồng</label>
+                <input type="text" name="" value="" id="diemChuan">
+                <label for="toan">Điểm môn toán</label>
+                <input type="text" name="" value id="toan">
+                <label for="ly">Điểm môn lý</label>
+                <input type="text" name="" value="" id="ly">
+                <label for="hoa">Điểm môn hóa</label>
+                <input type="text" name="" value="" id="hoa">
+                <label for="khuVuc">Khu vực ưu tiên</label>
+                <select id="khuVuc">
+                    <option value="0">X - Cộng 0 điểm</option>
+                    <option value="2">Khu vực A - Cộng 2 điểm</option>
+                    <option value="1">Khu vực B - Cộng 1 điểm</option>
+                    <option value="0.5">Khu vực C - Cộng 0.5 điểm</option>
+                </select>
+                <label for="doiTuong">Đối tượng ưu tiên</label>
+                <select id="doiTuong">
+                    <option value="0">0 - Cộng 0 điểm</option>
+                    <option value="2.5">Đối tượng 1 - Cộng 2.5 điểm </option>
+                    <option value="1.5">Đối tượng 2 - Cộng 1.5 điểm</option>
+                    <option value="1">Đối tượng 3 - Cộng 1 điểm</option>
+                </select>
+                <button id="xetTuyen" type="button">Xét tuyển</button>
+            </form>
+            <div id="ketQua"></div>
+            <hr>
+        </div>
+        <div class="content">
+            <h1>TÍNH TIỀN ĐIỆN</h1>
+            <form action="">
+                <label for="ten">Tên</label>
+                <input type="text" value="" id="nguoiDung">
+                <label for="soKwdien">Số Kw tiêu thụ</label>
+                <input type="text" value="" id="soKwdien">
+                <button id="tinhTiendien" type="button">Tính tiền điện</button>
+            </form>
+            <div id="tienDien"></div>
+            <hr>
+        </div>
+        <div class="content">
+            <h1>TÍNH THUẾ TNCN</h1>
+            <form action="">
+                <label for="hoVaten">Họ và tên người nộp thuế</label>
+                <input type="text" value="" id="hoVaten">
+                <label for="tongThunhap">Tổng thu nhập /năm</label>
+                <input type="text" value="" id="tongThunhap">
+                <label for="soNguoiphuthuoc">Số người phụ thuộc</label>
+                <input type="text" value="" id="soNguoiphuthuoc">
+                <button id="tinhTienthue" type="button">Tính tiền thuế TNCN</button>
+            </form>
+            <div id="tienThuetncn"></div>
+            <hr>
+        </div>
+        <div class="content">
+            <h1>TÍNH TIỀN CÁP</h1>
+            <form action="">
+                <label for="maKhachhang">Mã khách hàng</label>
+                <input type="text" value="" id="maKhachhang">
+                <label for="loaiKhachhang">Loại khách hàng</label>
+                <select name="" id="loaiKhachhang">
+                    <option value="nhà dân">Nhà dân</option>
+                    <option value="doanh nghiệp">Doanh nghiệp</option>
+                </select>
+                <label for="soKetnoi">Số kết nối</label>
+                <input type="text" value="" id="soKetnoi" disabled>
+                <label for="soKenhcaocap">Số kênh cao cấp</label>
+                <input type="text" value="" id="soKenhcaocap">
+                <button type="button" id="tinhTiencap">Tính tiền cáp</button>
+            </form>
+            <div id="tienCap"></div>
+            <hr>
+        </div>
+    </div>
+
+    <!-- link main.js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
